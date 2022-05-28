@@ -1,18 +1,18 @@
 import java.util.ArrayList;
 
-public class Resoluçao {
+public class ResoluÃ§ao {
 
 	public static void main(String[] args) {
 
-//		Dada a função findAge, que recebe uma string contendo chaves e valores, 
+//		Dada a funÃ§Ã£o findAge, que recebe uma string contendo chaves e valores, 
 //      onde key possui o nome de uma pessoa e value possui a idade dela, retorne a quantidade 
 //   	e os nomes das pessoas com idade abaixo de 29 anos
 //
-//		Input: '0key1: Matheus,2 value:3 25; key: Henrique, value: 29; key: Glória, value: 21'
-//		Output: "2 Pessoa(s): Matheus, Glória"
+//		Input: '0key1: Matheus,2 value:3 25; key: Henrique, value: 29; key: GlÃ³ria, value: 21'
+//		Output: "2 Pessoa(s): Matheus, GlÃ³ria"
 		
 
-		findAge("key: Matheus, value: 25; key: Henrique, value: 29; key: Glória, value: 21;key: Matheus, value: 25");
+		findAge("key: Matheus, value: 25; key: Henrique, value: 29; key: GlÃ³ria, value: 21;key: Gabriel, value: 25");
 		
 		
 		
@@ -27,7 +27,7 @@ public class Resoluçao {
 		String ultimoNomedeMenor = "";
 		
 		// List para armazenar os nomes
-		ArrayList<String> nomesQueMederamRaiva = new ArrayList<String>();
+		ArrayList<String> nomesDevs = new ArrayList<String>();
 		
 		// Quebrando a string em , : e ; para identificar a idade
 		String[] stringsSplited = string.split("[,;:]");
@@ -50,13 +50,13 @@ public class Resoluçao {
         			//usando essa logica entrcontrei o nome das pessoas com idade menor que 29
         			ultimoNomedeMenor = stringsSplited[i-2];
         			//Salvando na lista
-        			nomesQueMederamRaiva.add(ultimoNomedeMenor);
+        			nomesDevs.add(ultimoNomedeMenor);
         		}
         	}
         }
 
         System.out.println("Existem " + deMenor29 + " pessoas menores que 29 anos\n"
-        + "Nomes:\n" + nomesQueMederamRaiva);
+        + "Nomes:\n" + nomesDevs);
 		return result ;
 	}
 
